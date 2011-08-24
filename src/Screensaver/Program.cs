@@ -57,25 +57,28 @@ namespace ScreenSaver
 
         private static void RunScreensaver()
         {
-            int i = System.Windows.Forms.Screen.AllScreens.Count();
-            Dictionary<int, ScreenSaverForm> screenMap = new Dictionary<int,ScreenSaverForm>();
+            //int i = System.Windows.Forms.Screen.AllScreens.Count();
+            //Dictionary<int, ScreenSaverForm> screenMap = new Dictionary<int,ScreenSaverForm>();
 
-            for (int x = 0; x < i; x++)
-            {
-                screenMap[x] = new ScreenSaverForm();
-            }
+            //for (int x = 0; x < i; x++)
+            //{
+            //    screenMap[x] = new ScreenSaverForm();
+            //}
 
-            int j = 0;
-            foreach (System.Windows.Forms.Screen screen in System.Windows.Forms.Screen.AllScreens)
-            {
-                screenMap[j].Left = screen.Bounds.Width;
-                screenMap[j].Top = screen.Bounds.Height;
-                screenMap[j].Location = screen.Bounds.Location;
-                Point p = new Point(screen.Bounds.Location.X, screen.Bounds.Location.Y);
-                screenMap[j].Location = p;
-                screenMap[j].Show();
-                j++;
-            }
+            //int j = 0;
+            //foreach (System.Windows.Forms.Screen screen in System.Windows.Forms.Screen.AllScreens)
+            //{
+            //    screenMap[j].Left = screen.Bounds.Width;
+            //    screenMap[j].Top = screen.Bounds.Height;
+            //    screenMap[j].Location = screen.Bounds.Location;
+            //    Point p = new Point(screen.Bounds.Location.X, screen.Bounds.Location.Y);
+            //    screenMap[j].Location = p;
+            //    screenMap[j].Show();
+            //    j++;
+            //}
+
+            Browser browser = new Browser();
+            browser.Show();
 
             Application.Run();
         }

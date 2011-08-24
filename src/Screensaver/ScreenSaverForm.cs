@@ -59,19 +59,6 @@ namespace ScreenSaver
         public ScreenSaverForm()
         {
             InitializeComponent();
-
-           // int height = 0;
-           // int width = 0;
-           // foreach (System.Windows.Forms.Screen screen in System.Windows.Forms.Screen.AllScreens)
-           // {
-           //     //take smallest height
-           //     height = (screen.Bounds.Height >= height) ? screen.Bounds.Height : height;
-           //     width += screen.Bounds.Width;
-           // }
-
-           //this.Size = new System.Drawing.Size(width, height);
-
-
            
         }
 
